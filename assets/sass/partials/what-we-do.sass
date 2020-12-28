@@ -1,0 +1,21 @@
+#what-we-do
+    padding: $header-height 0
+    background-image: url("../img/what-we-do.png")
+    .wrapper
+        @include container-1920
+        .step
+            height: 0
+            opacity: 0
+            transition: all 0.4s ease-in-out
+            &.active
+                height: 508px
+                opacity: 1
+        .description-and-img-block
+            display: grid
+            grid-template-columns: 0.5fr 0.15fr 0.5fr
+            .description
+                grid-column: 1/2
+                align-self: center
+            .img-container
+                grid-column: 3/4
+           

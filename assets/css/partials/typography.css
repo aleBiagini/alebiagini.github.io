@@ -1,0 +1,14 @@
+@font-face {
+  src: url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2");
+  font-family: "Open Sans";
+  font-weight: 400; }
+@font-face {
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
+  font-family: "Open Sans";
+  font-weight: 600; }
+@font-face {
+  src: url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2");
+  font-family: "Open Sans";
+  font-weight: 700; }
+
+/*# sourceMappingURL=typography.css.map */
