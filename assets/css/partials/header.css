@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'container-1920'.
-        on line 11 of assets/sass/partials/header.sass, in `container-1920'
-        from line 11 of assets/sass/partials/header.sass
+        on line 15 of assets/sass/partials/header.sass, in `container-1920'
+        from line 15 of assets/sass/partials/header.sass
 
-6:     background-color: rgba(0, 0, 0, 0.5)
-7:     height: 100vh
-8:     width: 100%
-9:     position: relative
 10:     .title
-11:         @include container-1920
-12:         position: absolute
-13:         left: 0
-14:         right: 0
-15:         top: 40%
-16:     .cta
+11:         position: absolute
+12:         left: 0
+13:         right: 0
+14:         top: 40%
+15:         @include container-1920
+16: 
+17:     .cta
+18:         position: absolute
+19:         left: 0
+20:         right: 0
 
 Backtrace:
-assets/sass/partials/header.sass:11:in `container-1920'
-assets/sass/partials/header.sass:11
+assets/sass/partials/header.sass:15:in `container-1920'
+assets/sass/partials/header.sass:15
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
@@ -80,4 +80,4 @@ C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'container-1920'.\A         on line 11 of assets/sass/partials/header.sass, in `container-1920'\A         from line 11 of assets/sass/partials/header.sass\A \A 6:     background-color: rgba(0, 0, 0, 0.5)\A 7:     height: 100vh\A 8:     width: 100%\A 9:     position: relative\A 10:     .title\A 11:         @include container-1920\A 12:         position: absolute\A 13:         left: 0\A 14:         right: 0\A 15:         top: 40%\A 16:     .cta"; }
+  content: "Error: Undefined mixin 'container-1920'.\A         on line 15 of assets/sass/partials/header.sass, in `container-1920'\A         from line 15 of assets/sass/partials/header.sass\A \A 10:     .title\A 11:         position: absolute\A 12:         left: 0\A 13:         right: 0\A 14:         top: 40%\A 15:         @include container-1920\A 16: \A 17:     .cta\A 18:         position: absolute\A 19:         left: 0\A 20:         right: 0"; }

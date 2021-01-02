@@ -8,13 +8,13 @@
     width: 100%
     position: relative
     .title
-        @include container-1920
         position: absolute
         left: 0
         right: 0
         top: 40%
-    .cta
         @include container-1920
+
+    .cta
         position: absolute
         left: 0
         right: 0
@@ -23,6 +23,6 @@
         display: flex
         align-items: center
         justify-content: center
-         
-
-
+        @include container-1920
+        @media ( max-width: 767px )
+            top: 85%

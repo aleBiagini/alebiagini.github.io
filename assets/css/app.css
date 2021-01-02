@@ -337,10 +337,8 @@ img {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 45px;
+  line-height: 38px;
   text-align: center; }
-  @media (max-width: 768px) {
-    .subtitle {
-      margin-bottom: 15px; } }
 
 .light {
   color: #ffffff; }
@@ -366,21 +364,16 @@ img {
   width: 100%;
   position: relative; }
   .header .title {
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 100%;
-    width: 1330px;
     position: absolute;
     left: 0;
     right: 0;
-    top: 40%; }
-  .header .cta {
+    top: 40%;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
     max-width: 100%;
-    width: 1330px;
+    width: 1330px; }
+  .header .cta {
     position: absolute;
     left: 0;
     right: 0;
@@ -388,7 +381,15 @@ img {
     font-size: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
+    width: 1330px; }
+    @media (max-width: 767px) {
+      .header .cta {
+        top: 85%; } }
 
 .menu {
   height: 105px;
@@ -454,12 +455,34 @@ img {
       #what-we-do .wrapper .step.active {
         height: 508px;
         opacity: 1; }
+        @media (max-width: 767px) {
+          #what-we-do .wrapper .step.active {
+            height: fit-content; } }
     #what-we-do .wrapper .description-and-img-block {
       display: grid;
-      grid-template-columns: 0.5fr 0.15fr 0.5fr; }
+      grid-template-columns: 0.5fr 0.15fr 0.5fr;
+      position: relative; }
+      @media (max-width: 768px) {
+        #what-we-do .wrapper .description-and-img-block {
+          grid-template-columns: 1fr; } }
+      @media (max-width: 767px) {
+        #what-we-do .wrapper .description-and-img-block {
+          grid-template-rows: 350px 500px; } }
       #what-we-do .wrapper .description-and-img-block .description {
         grid-column: 1/2;
         align-self: center; }
+        @media (max-width: 768px) {
+          #what-we-do .wrapper .description-and-img-block .description {
+            grid-column: none;
+            align-self: center;
+            position: absolute;
+            color: #fff;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9); } }
+        @media (max-width: 767px) {
+          #what-we-do .wrapper .description-and-img-block .description {
+            grid-row: 2/3;
+            position: relative; } }
       #what-we-do .wrapper .description-and-img-block .img-container {
         grid-column: 3/4; }
 
@@ -470,6 +493,9 @@ img {
   @media (max-width: 768px) {
     #form {
       padding: 30px 0; } }
+  @media (max-width: 767px) {
+    #form {
+      height: auto; } }
   #form .wrapper {
     margin: 0 auto;
     padding-left: 30px;
@@ -479,10 +505,14 @@ img {
     #form .wrapper .form-and-description-block {
       display: flex;
       justify-content: space-around; }
+      @media (max-width: 768px) {
+        #form .wrapper .form-and-description-block {
+          flex-direction: column; } }
       #form .wrapper .form-and-description-block .description {
-        max-width: 350px; }
+        max-width: 768px;
+        margin-bottom: 35px; }
       #form .wrapper .form-and-description-block form {
-        max-width: 350px;
+        max-width: 768px;
         width: 100%;
         align-items: center;
         display: flex;
@@ -490,11 +520,12 @@ img {
         flex-direction: column;
         height: 100%; }
         #form .wrapper .form-and-description-block form input, #form .wrapper .form-and-description-block form textarea {
-          border-bottom: 1px solid #ccc;
+          border-bottom: 1px solid #000;
           margin-bottom: 30px;
           width: 350px;
           padding: 10px 5px;
           font-size: 16px;
-          font-family: "Open Sans", sans-serif; }
+          font-family: "Open Sans", sans-serif;
+          background: transparent; }
 
 /*# sourceMappingURL=app.css.map */

@@ -4,25 +4,32 @@
     height: 100vh
     @media ( max-width: 768px )
         padding: 30px 0
+    @media ( max-width: 767px )
+        height: auto
     .wrapper
         @include container-1920
         .form-and-description-block
             display: flex
             justify-content: space-around
+            @media ( max-width: 768px )
+                flex-direction: column
             .description
-                max-width: 350px
+                max-width: 768px
+                margin-bottom: 35px
             form
-                max-width: 350px
+                max-width: 768px
                 width: 100%
                 align-items: center
                 display: flex
                 justify-content: center
                 flex-direction: column
                 height: 100%
+
                 input, textarea
-                    border-bottom: 1px solid #ccc
+                    border-bottom: 1px solid #000
                     margin-bottom: 30px
                     width: 350px
                     padding: 10px 5px
                     font-size: 16px
                     font-family: 'Open Sans', sans-serif
+                    background: transparent
